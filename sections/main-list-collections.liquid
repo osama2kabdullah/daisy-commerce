@@ -1,0 +1,28 @@
+<h1 class="text-4xl text-center font-bold my-6">Collections</h1>
+<div class="grid gap-6 grid-cols-3">
+  {% for collection in collections %}
+    <div class="card mx-auto w-96 bg-base-100 shadow-xl image-full">
+      <figure>
+        <img
+          width=""
+          height=""
+          loading="lazy"
+          src="{{ collection.featured_image | image_url }}"
+          alt="Album"
+        >
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title">{{ collection.title }}</h2>
+        <p>{{ collection.description }}</p>
+        <p>
+          Total: <span class="font-bold">{{ collection.all_products_count }}</span>
+        </p>
+        <div class="card-actions justify-end">
+          <a href="{{ collection.url }}">
+            <button class="btn btn-primary">See all</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>

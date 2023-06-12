@@ -1,0 +1,54 @@
+<div class="min-h-screen bg-base-100">
+  <div class="lg:w-[70vw] md:w-[90vw] mx-auto pt-12">
+    <div class="card card-body shadow-2xl bg-base-100">
+        
+
+        <div class="text-center lg:text-left">
+            <h1 class="text-5xl font-bold">{{ page.title }}</h1>
+            <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+          </div>
+
+
+      {% form 'contact' %}
+        
+        <div class="grid lg:gap-5 lg:grid-cols-2">
+            <div class="form-control">
+                <label for="first-name" class="label">
+                  <span class="label-text">Name</span>
+                </label>
+                <input
+                  type="text"
+                  name="contact[first_name]"
+                  id="first-name"
+                  placeholder="Name"
+                  class="input input-bordered"
+                >
+              </div>
+      
+              <div class="form-control">
+                <label for="email" class="label">
+                  <span class="label-text">Email</span>
+                </label>
+                <input type="email" name="contact[email]" id="email" placeholder="Email" class="input input-bordered">
+              </div>
+        </div>
+
+        <div class="form-control">
+          <label for="message" class="label">
+            <span class="label-text">Message</span>
+          </label>
+          <textarea
+            name="contact[body]"
+            id="message"
+            class="textarea textarea-bordered"
+            placeholder="Message"
+          ></textarea>
+        </div>
+
+        <div class="mt-6">
+          <input class="btn btn-wide btn-primary" type="submit" value="Send">
+        </div>
+      {% endform %}
+    </div>
+  </div>
+</div>

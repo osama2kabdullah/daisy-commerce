@@ -9,9 +9,9 @@
     <!-- Tailwind CSS -->
     {{ 'application.css' | asset_url | stylesheet_tag }}
   </head>
-  <body>
+  <body class="max-w-[1224px] mx-auto">
     {% sections 'header-group' %}
-    <main>
+    <main class="">
       {{ content_for_layout }}
     </main>
     {% sections 'footer-group' %}
