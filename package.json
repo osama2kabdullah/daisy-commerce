@@ -1,14 +1,12 @@
 {
-  "name": "daisy-commerce",
-  "packageManager": "yarn@3.4.1",
+  "name": "daisy-theme",
+  "packageManager": "yarn@3.6.0",
   "scripts": {
-    "start": "shopify theme dev",
-    "watch": "npx tailwind -i ./assets/tailwind.css -o ./assets/application.css --watch",
-    "dev": "yarn run watch & yarn start"
+    "watch": "npx tailwind -i ./assets/tailwind.css -o ./assets/application.css --watch"
   },
   "devDependencies": {
     "@shopify/prettier-plugin-liquid": "^1.1.0",
-    "daisyui": "^3.0.25",
+    "daisyui": "^3.1.1",
     "tailwindcss": "^3.3.2"
   }
 }

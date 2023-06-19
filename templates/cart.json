@@ -5,5 +5,7 @@
       "settings": {}
     }
   },
-  "order": ["cart-items"]
+  "order": [
+    "cart-items"
+  ]
 }
